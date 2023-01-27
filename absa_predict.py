@@ -16,3 +16,4 @@ def prediction(text):
     
     except:
         print("Cannot load the model")
+        raise Exception("Cannot load the model")
