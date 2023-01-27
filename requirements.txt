@@ -8,3 +8,4 @@ scikit_learn==1.2.1
 seaborn==0.11.2
 streamlit==1.10.0
 wordcloud==1.8.1
+youtokentome==1.0.6
