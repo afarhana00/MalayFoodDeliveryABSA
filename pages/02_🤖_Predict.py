@@ -17,11 +17,7 @@ with predict_cont:
         clean_sentence = mp.partial_clean(sentences)
         clean_sentence = mp.malaya_preprocess(clean_sentence)
         clean_sentence = mp.malaya_normalizer(clean_sentence)
-
-        if prediction(clean_sentence) == "ERROR":
-            st.write("Cannot load the model. Please contact the developer.")
-        else:
-            aspect, sentiment, confidence = prediction(clean_sentence)
+        aspect, sentiment, confidence = prediction(clean_sentence)
         
         if len(aspect)==0:
             ayat = "No related aspect found. Please type other sentence."
