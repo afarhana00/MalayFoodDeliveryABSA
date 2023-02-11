@@ -15,5 +15,4 @@ def prediction(text):
         return predicted_text[0]['aspect'], predicted_text[0]['sentiment'], predicted_text[0]['confidence']
     
     except:
-        print("Cannot load the model")
-        raise Exception("Cannot load the model")
+        return "ERROR"
